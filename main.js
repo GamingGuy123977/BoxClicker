@@ -1,4 +1,4 @@
-var count = 25000;
+var count = 0;
 var cps = 0;
 var countUpPer = 1;
 var buyPriceCountUpPer = 10;
