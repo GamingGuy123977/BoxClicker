@@ -102,7 +102,16 @@ function newPopup(url) {
 		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 }
 
+var checkWin = function () {
+    if (count == Infinity) {
+        newPopup('secondary.html')
+    } else {
+        pass
+    }
+} 
+
 setInterval(cpsPs, 100);
+setInterval(checkWin, 1000);
 
 //setInterval(buyCountUpPer, 0.001)
 //setInterval(changeText, 0.5)
