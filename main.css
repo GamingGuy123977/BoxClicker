@@ -19,6 +19,11 @@ body {
     height:100%;
 }
 
+button {
+    color:blue;
+    background-color: darkred;
+}
+
 a {
     text-decoration: none;
 }
