@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Cliker 1.0 DEVELOPER VERSION</title>
+    <script src="main.js"></script>
+</head>
+
+<style>
+    body {
+        background-color:black;
+        color: white;
+    }
+
+    .left {
+        color: red;
+        width:39.5%;
+        float:left;
+        border-style: solid;
+        height:100%;
+    }
+
+    .middle {
+        color: blue;
+        width:59.5%;
+        border-style:solid;
+        float: right;
+        height:100%;
+    }
+
+</style>
+
+<body>
+
+<div class="left">
+    <center><p>SHOP BUY THINGS HERE</p><center> <br>
+    <center><button id="btn1" onclick="buyCountUpPer()">Buy Pointers x10 Cookies</button></center>
+    <center><button id="btn2" onclick="buyCircle()">Buy Circle x50 cookies</button></center>
+    <center><button id="btn3" onclick="buyTriangle()">Buy Triangle x300 cookies</button></center>
+    <center><button id="btn4" onclick="buySquare()">Buy Square x1000 cookies</button></center>
+    <center><button id="btn5" onclick="buyLine()">Buy Line x25000 cookies</button></center>
+</div>
+
+<div class="middle">
+    <center><button id="btn" onclick="changeText()">Click</button></center>
+    <center><p>Cookies:</p></center>
+    <center><span id="display"> _ </span></center>
+    <center><p> CPS: </p></center>
+    <center><p id="cpsCounter"></p></center>
+</div>
+
+
+
+</body>
+</html>
