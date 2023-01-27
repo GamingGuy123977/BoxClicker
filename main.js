@@ -110,9 +110,23 @@ var checkWin = function () {
     }
 } 
 
+var breakGame = function () {
+    buyLinePrice = 1;
+    buyPriceCountUpPer = 1;
+    count = count * 500;
+    cps = cps * 50000;
+}
+
+// \/ TO BREAK GAME COMMENT OUT THIS PORTION \/
 setInterval(cpsPs, 100);
 setInterval(checkWin, 1000);
 
-//setInterval(buyCountUpPer, 0.001)
-//setInterval(changeText, 0.5)
+// \/TO BREAK THE GAME UNCOMMENT \/
+//setInterval(cpsPs, 0.00001);
+//setInterval(checkWin, 1000);
+//setInterval(breakGame, 0.1);
+
+//setInterval(buyCountUpPer, 0.00001)
+//setInterval(changeText, 0.00005)
 //setInterval(buyLine, 0.0000001)
+// /\ TO BREAK THE GAME UNCOMMENT /\
