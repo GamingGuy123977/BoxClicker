@@ -6,6 +6,9 @@ var buyCirclePrice = 50;
 var buyTrianglePrice = 300;
 var buySquarePrice = 1200;
 var buyLinePrice = 25000;
+var buyOctaPrice = 100;
+var bP = 0; 
+var additive = 0;
 
 function buyMultiplier (buyPrice, Multiplier) {
     buyPrice = Math.ceil(buyPrice * Multiplier);
@@ -116,6 +119,25 @@ var breakGame = function () {
     count = count * 500;
     cps = cps * 50000;
 }
+
+function makeBuyFunction (shape, buyPrice, btnNum) {
+    if (shape == "Octagon") {
+        additive = 8;
+    } else {
+        pass;
+    }
+
+    if (count >= buyPrice) {
+        count = count - buyPrice;
+        buyPrice = buyMultiplier(buyPrice, 1.2);
+        cps = cps + additive;
+        document.getElementById("display").innerText = count;
+        document.getElementById(btnNum).innerText = "Price: " + buyPrice; 
+        return buyPrice;
+    } else {
+        pass;
+    };
+};
 
 // \/ TO BREAK GAME COMMENT OUT THIS PORTION \/
 setInterval(cpsPs, 100);
